@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Foodie Review</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Groovin
+  * Updated: Mar 10 2023 with Bootstrap v5.2.3
+  * Template URL: https://bootstrapmade.com/groovin-free-bootstrap-theme/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top d-flex align-items-center">
+    <div class="container d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>
+      <h1 class="logo"><a href="index.html">Foodie Search</a></h1>
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto " href="index.html">Home</a></li>
+          <li><a class="nav-link scrollto" href="review.html">Review Section</a></li>
+		      <li><a class="nav-link scrollto" href="upload.html">Upload A Recipe Review</li>
+          <li class="dropdown"><a href="#"><span>Meal Categories</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              </li><a href="breakfast.html">Breakfast Ideas</a></li>
+              <li><a href="lunch.html">Lunch Ideas</a></li>
+              <li><a href="dinner.html">Dinner Ideas</a></li>
+              <li><a href="dessert.html">Dessert Ideas</a></li>
+            </ul>
+          </li>
+          <li><a class="nav-link scrollto" href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Recipe Load Section ======= -->
+  <section class="recipe-load-section" id="upload">
+    <br>
+
+    <h2 id="recipe-load-section-title"> Upload A Review: </h2>
+
+   <div class="upload-container">
+      <div class="recipe-cards-section" id="result">
+                <div id="image-upload">
+                  <label id="imgUpload" for="imgUpload"> Upload a photo:</label>
+                  <form name="imgUpload" action="#" method="post">
+                    <input type="file" name="imageUpload" accept="image/*" max-size="8192" id="imgFile"/>
+                    <br/>
+                    <label id="recipie-name"> Recipe Name: </label>
+                    <input class="form-control" type="text" name="imgDesc" value="" id="imgDesc"/>
+                    <br>
+					<label for="feedback-input">Rating out of 5:</label>
+					<input class="form-control" type="text" name="feedback" value="" id="feedback-input"/>
+					<br>
+
+                    <label id="userName"> User Name: </label>
+                    <input class="form-control" type="text" name="name" value="" id="name"/>
+                    <br />
+                    <div class="text-center">
+                      <input class = "btn btn-primary btn-outline btn-lg" type="button" name="uploadButton" value="Upload" id="uploadButton"/>
+                    </div>
+                  </form>
+                </div>
+      </div>
+
+      <div class="upload-img-container">
+
+
+      </div>
+
+      <div class="upload-intructions">
+        <p>
+          We would love for you to share your culinary creations with our community! To do so, simply upload a photo of your dish,
+          along with the name of the recipe you followed, a brief comment describing your experience, and your name.
+          This will not only allow others to appreciate and perhaps even learn from your cooking expertise, but it will also help to 
+          foster a sense of connection and collaboration among food enthusiasts. We can't wait to see what you've cooked up!
+        </p>
+      </div>
+
+    </div> 
+
+  </section><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+
+
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong><span>Groovin</span></strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/groovin-free-bootstrap-theme/ -->
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+	
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script>
+	var settings = {
+		"url": "https://api.imgur.com/3/album/HgkzTap/images",
+		"method": "GET",
+		"timeout": 0,
+		"headers": {
+			"Authorization": "Bearer 1c5b96098fad8a3841977528a09805df360c0ea4"
+		},
+	};
+
+          $.ajax(settings).done(function (response) {
+            var photoHTML = "";
+            //Loop through JSON data
+            var loopCount = 0;
+            $.each(response.data, function(i,images) {
+              photoHTML += '<div class = "recipe-cards-section"> <div class="card"> <img src= "'+images.link+'"class="img-responsive"/> <div class="blog-text"> <p class="text-format">'+images.description+'</p></div>	</div> </div>';
+                {
+                loopCount++;
+                if(loopCount == 3)
+                    photoHTML += '<div style="clear:both"></div>'
+                    loopCount = 0;
+                }
+            }); //end each
+
+            
+        $('#imgur-images').html(photoHTML);
+
+        console.log(response);
+        });
+
+   </script>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+<script>
+$(document).ready(function () {
+
+//jquery code for image upload
+	$('#uploadButton').on("click", function() {
+							
+			var $files = $('#imgFile').get(0).files;
+
+			if ($files.length) {
+
+			// Reject big files - files.size is in bytes, so we convert the max-size value from the form in kb to //bytes (remember 1024 bytes make a kb)
+			if ($files[0].size > $(this).data("max-size") * 1024) {
+					alert("Please select a smaller file");
+					return false;
+			}
+			
+			// Begin file upload
+			console.log("Uploading file to Imgur..");
+ 
+			// Replace api key with your own API bearer key
+			var apiUrl = 'https://api.imgur.com/3/image';
+			var apiKey = '1c5b96098fad8a3841977528a09805df360c0ea4';
+
+			var settings = {
+					async: false,
+					crossDomain: true,
+		 			processData: false,
+					contentType: false,
+					type: 'POST',
+					url: apiUrl,
+					headers: {
+					Authorization: 'Bearer ' + apiKey,
+					Accept: 'application/json'
+					},
+					
+					mimeType: 'multipart/form-data'
+			};
+	}
+
+			//get the value from the text box
+			var imgDesc = $('#imgDesc').val();
+			if(imgDesc == "" || imgDesc == null)
+			{
+					imgDesc = "No Description";
+			}
+
+			var name = $('#name').val();
+			var feedback = $('#feedback-input').val();
+				 
+			var formData = new FormData();
+			formData.append("image", $files[0]);
+			formData.append("album", "HgkzTap"); //set the hash to an album on your imgur account
+			formData.append("description", "Review By: " + name + " Recipe Title: " + imgDesc + "  The Rating :" + feedback + "/5" );
+
+			settings.data = formData;
+
+			// check the console log when in doubt
+			$.ajax(settings).done(function(response) {
+					console.log(response);
+					alert("Upload Successful");
+			});
+
+
+	});
+
+	});
+</script>
+</body>
+
+</html>
